@@ -44,7 +44,7 @@ Comandos Básicos para Trabajar con Git
     Elimina un remoto previamente configurado.
     git remote remove origin
 
-Comandos Útiles para la Gestión del Repositorio
+-----Comandos Útiles para la Gestión del Repositorio--------------------------------------------------------------------------
 
 1. Ver la configuración de Git:
    Muestra la configuración global de Git (nombre, correo, etc.).
@@ -94,3 +94,41 @@ Ver información sobre el repositorio
 
 2. Ver la información de las ramas remotas:
    git branch -r
+
+Pasos para sincronizar y subir cambios a GitHub
+
+1. **Verificar los cambios remotos en GitHub**:
+   Para sincronizar tu repositorio local con los cambios realizados en GitHub, ejecuta:
+   git pull origin master
+
+2. **Verificar el estado local**:
+   Después de hacer el pull, verifica el estado de tu repositorio local:
+   git status
+
+3. **Modificar el código**:
+   Haz los cambios necesarios en tu código usando Visual Studio Code o cualquier otro editor.
+
+4. **Añadir los archivos modificados**:
+   Después de modificar los archivos, agrégalos al área de preparación:
+   - Para agregar un archivo específico:
+     git add archivo_modificado
+   - Para agregar todos los archivos modificados:
+     git add .
+
+5. **Realizar el commit de los cambios**:
+   Después de añadir los archivos, realiza un commit para guardar los cambios en el repositorio local:
+   git commit -m "Modificar archivo X o agregar funcionalidad Y"
+
+6. **Subir los cambios al repositorio remoto en GitHub**:
+   Para subir los cambios al repositorio remoto de GitHub, ejecuta:
+   git push
+
+Resumen de Comandos:
+
+1. git pull origin master
+2. git status
+3. git add archivo_modificado (o git add .)
+4. git commit -m "Mensaje del commit"
+5. git push
+
+
